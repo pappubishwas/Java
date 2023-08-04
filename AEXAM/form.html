@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+</head>
+<body>
+	<h1>Registration Form</h1>
+	<form action="http://localhost:8080/Registration.java" method="post">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" required><br>
+
+		<label for="aadhar">Aadhar No:</label>
+		<input type="text" id="aadhar" name="aadhar" required><br>
+
+		<label>Gender:</label><br>
+		<input type="radio" id="male" name="gender" value="male" required>
+		<label for="male">Male</label><br>
+		<input type="radio" id="female" name="gender" value="female">
+		<label for="female">Female</label><br>
+
+		<label for="area">Area Type:</label>
+		<select id="area" name="area">
+			<option value="urban">Urban</option>
+			<option value="rural">Rural</option>
+		</select><br>
+
+		<label for="address">Address:</label><br>
+		<textarea id="address" name="address" required></textarea><br>
+
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
